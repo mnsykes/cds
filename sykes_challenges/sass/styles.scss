@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+@import "modal";
+@import "confirmation";
+@import "header";
+@import "form";
+@import "footer";
+
+// global styles
+* {
+	box-sizing: border-box;
+
+	padding: 0;
+}
+
+body {
+	overflow: visible;
+	margin: 100px 0;
+	font-family: "Inter", sans-serif;
+	height: 100vh;
+	font-size: 12px;
+}
+
+.container {
+	max-width: 500px;
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	margin: 100px auto;
+	// position: relative;
+	// transform: translate(-50%, -50%);
+	// top: 50%;
+	// left: 50%;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.hidden {
+	display: none;
+}
+
+.error {
+	border: 1px solid $dark-error-bg;
+}
+
+.error-msg {
+	color: $dark-error-bg;
+}
+
+.required-input {
+	border: none;
+	background: pink;
+	border-bottom: 1px solid red;
+}
+
+.required::after {
+	content: "*";
+	color: red;
+	font-weight: bold;
+	margin-left: 1px;
+}

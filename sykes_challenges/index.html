@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="confirmation-msg">
+				<h3>You have filled in all of the fields correctly</h3>
+			</div>
+			<header class="page-header">
+				<div class="header-image">
+					<img src="images/image.jpg" alt="cds office building" />
+				</div>
+				<div class="page-title">
+					<h1>Contact Details</h1>
+				</div>
+			</header>
+			<main>
+				<form id="entry-form" class="flex">
+					<!-- first name and last name input fields 14px, bold -->
+					<div class="contact-group flex">
+						<label for="fname" class="required">First name</label>
+						<input type="text" name="fname" id="fname" title="First name" maxlength="30" required />
+						<label for="lname" class="required">Last name</label>
+						<input type="text" name="lname" id="lname" title="Last name" maxlength="30" required />
+						<label for="phone" class="required">Phone number</label>
+						<input
+							type="text"
+							name="phone"
+							id="phone"
+							title="Please enter a valid phone number"
+							maxlength="30"
+							pattern="^[0-9]{1,30}$"
+							required
+						/>
+						<!-- email input field italics -->
+						<label for="email" class="required">Email</label>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							title="Please enter a valid email address"
+							maxlength="50"
+							pattern="^[A-Za-z0-9\u0430-\u044F\u0410-\u042F\._-]+@([A-Za-z0-9\u0430-\u044F\u0410-\u042F]{1,2}|[A-Za-z0-9\u0430-\u044F\u0410-\u042F]((?!(\.\.))[A-Za-z0-9\u0430-\u044F\u0410-\u042F.-])+[A-Za-z0-9\u0430-\u044F\u0410-\u042F])\.[A-Za-z\u0430-\u044F\u0410-\u042F]{2,}$"
+							required
+						/>
+						<small>Required for email confirmation</small>
+					</div>
+
+					<div class="promo-group flex">
+						<div class="promo-input flex">
+							<label for="promo-code" class="required">Enter promo code</label>
+							<input
+								type="text"
+								name="promo"
+								id="promo-code"
+								title="Please enter a valid promo code"
+								maxlength="7"
+								pattern="[A-Za-z0-9]{1,7}$"
+								required
+							/>
+						</div>
+						<div class="no-promo">
+							<input type="checkbox" name="promo-check" id="promo-check" />
+							<label for="promo-check">I don't have a promo code</label>
+						</div>
+					</div>
+
+					<div class="hidden-controls">
+						<div class="choices-group flex">
+							<label for="choices" class="choice-label">How did you hear about us</label>
+							<select name="choices" id="choices">
+								<option value="" default>Please select</option>
+								<option value="social media">Social Media</option>
+								<option value="from a friend">From a friend</option>
+								<option value="email">Email</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="text-row">
+							<div class="choose-other flex">
+								<label for="other" class="other-label">If other, please specify</label>
+								<textarea name="other" id="other" cols="30" rows="10" maxlength="255"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="terms-group">
+						<input type="checkbox" name="terms-check" id="terms" required />
+						<label for="terms-check">
+							<span class="terms-link"> I agree to the terms and conditions of this event </span>
+						</label>
+					</div>
+					<button class="submit-btn">Submit</button>
+				</form>
+			</main>
+			<footer class="page-footer">
+				<!-- footer text 18px, bold -->
+				<h4>For assistance please call <a href="tel:555-5555">555-5555</a></h4>
+				<h4>or email <a href="mailto:test@test.com">test@test.com</a></h4>
+			</footer>
+			<div id="terms-modal">
+				<div class="terms-modal-bg">
+					<div class="terms-modal-content">
+						<div class="modal-header">
+							<h2>Event terms and conditions</h2>
+						</div>
+						<ul class="terms-list">
+							<li class="terms-list-item">
+								All cancellation requests must be received by March 1, 2022
+							</li>
+							<li class="terms-list-item">
+								All cancellation requests are subject to a $100 cancellation fee
+							</li>
+							<li class="terms-list-item">
+								No one under the age of 16 will be allowed on the show floor
+							</li>
+						</ul>
+						<button class="modal-btn">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/form.js"></script>
+	</body>
+</html>

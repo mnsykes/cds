@@ -1,0 +1,14 @@
+$white: rgb(248, 248, 248);
+$blue: #527eb8;
+$dark-bg: #333;
+$light-bg: rgba(
+	$color: $blue,
+	$alpha: 0.65
+);
+$label: rgba(
+	$color: #333,
+	$alpha: 0.85
+);
+$dark-error-bg: rgb(218, 0, 0);
+$light-error-bg: rgb(255, 146, 146);
+$success-green: rgb(8, 138, 8);

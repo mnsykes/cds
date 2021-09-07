@@ -1,0 +1,21 @@
+// start footer styles
+.page-footer {
+	text-align: center;
+	background: $dark-bg;
+	padding: 30px 20px;
+
+	h4 {
+		font-size: 18px;
+		font-weight: bold;
+		color: $white;
+	}
+
+	a {
+		color: $blue;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+} // end footer styles

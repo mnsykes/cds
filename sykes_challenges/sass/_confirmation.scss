@@ -1,0 +1,13 @@
+// start form confirmation styles
+
+.confirmation-msg {
+	display: none;
+	text-align: center;
+	color: $white;
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 15px 10px;
+	background: $success-green;
+	height: auto;
+	width: 100%;
+} // end form confirmation

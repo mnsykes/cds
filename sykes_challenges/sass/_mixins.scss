@@ -1,0 +1,20 @@
+// mixins
+
+@mixin buttons {
+	margin: 0 auto;
+	cursor: pointer;
+	width: 150px;
+	height: 50px;
+	background: rgba($color: $blue, $alpha: 0.85);
+	padding: 5px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: $white;
+
+	&:hover {
+		background: rgba($color: $blue, $alpha: 1);
+		font-weight: 600;
+	}
+}

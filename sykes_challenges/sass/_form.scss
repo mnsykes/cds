@@ -1,0 +1,96 @@
+// start entry form styles
+
+#entry-form {
+	border-radius: 20px;
+	padding: 20px 40px;
+	max-width: 100%;
+
+	label {
+		font-size: 16px;
+		font-weight: bold;
+		color: $label;
+	}
+
+	input[type="text"],
+	select {
+		font-family: "Inter", sans-serif;
+
+		height: 32px;
+		padding: 2px 8px;
+	}
+
+	input[type="checkbox"] {
+		vertical-align: middle;
+		position: relative;
+		bottom: 2px;
+	}
+
+	.contact-group {
+		margin-bottom: 20px;
+
+		input {
+			margin-bottom: 8px;
+		}
+
+		#fname,
+		#lname {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#email {
+			font-style: italic;
+		}
+
+		small {
+			font-weight: 500;
+		}
+	}
+
+	.promo-group {
+		margin-bottom: 24px;
+	}
+
+	.hidden-controls {
+		display: none;
+
+		.choices-group {
+			margin-bottom: 5px;
+		}
+
+		.text-row {
+			display: none;
+
+			.choose-other {
+				input[type="textarea"] {
+					border: none;
+				}
+
+				#other {
+					font-family: "Inter", sans-serif;
+					color: $label;
+					padding: 8px 8px;
+				}
+			}
+		}
+	}
+
+	.terms-group {
+		padding: 20px 0;
+		border-top: 1px solid $blue;
+		.terms-link {
+			cursor: pointer;
+			color: $blue;
+			font-weight: bold;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.submit-btn {
+		@include buttons;
+	}
+}

@@ -1,0 +1,100 @@
+#entry-form {
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+#entry-form label,
+#entry-form .terms-link {
+  font-size: 18px;
+  color: #527eb8;
+}
+
+#entry-form input,
+#entry-form select,
+#entry-form option {
+  border: none;
+  border-bottom: 1px solid purple;
+  -webkit-box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  padding: 2px 8px;
+}
+
+#entry-form input .contact-group,
+#entry-form select .contact-group,
+#entry-form option .contact-group {
+  margin-bottom: 20px;
+}
+
+#entry-form input .contact-group #fname,
+#entry-form input .contact-group #lname,
+#entry-form select .contact-group #fname,
+#entry-form select .contact-group #lname,
+#entry-form option .contact-group #fname,
+#entry-form option .contact-group #lname {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#entry-form input .contact-group #email,
+#entry-form select .contact-group #email,
+#entry-form option .contact-group #email {
+  font-style: italic;
+}
+
+#entry-form input .contact-group small,
+#entry-form select .contact-group small,
+#entry-form option .contact-group small {
+  font-weight: 500;
+}
+
+#entry-form input .hidden-controls,
+#entry-form select .hidden-controls,
+#entry-form option .hidden-controls {
+  display: none;
+}
+
+#entry-form input .hidden-controls .text-row,
+#entry-form select .hidden-controls .text-row,
+#entry-form option .hidden-controls .text-row {
+  display: none;
+}
+
+#entry-form input .hidden-controls .text-row .choose-other #other,
+#entry-form select .hidden-controls .text-row .choose-other #other,
+#entry-form option .hidden-controls .text-row .choose-other #other {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  padding: 8px 8px;
+}
+
+#entry-form input .terms-group .terms-link,
+#entry-form select .terms-group .terms-link,
+#entry-form option .terms-group .terms-link {
+  cursor: pointer;
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+#entry-form input .submit-btn,
+#entry-form select .submit-btn,
+#entry-form option .submit-btn {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background: blue;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+#entry-form input .submit-btn:hover,
+#entry-form select .submit-btn:hover,
+#entry-form option .submit-btn:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=form.css.map */
